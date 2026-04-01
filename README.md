@@ -1,9 +1,10 @@
 # 📈 AI-Powered Indian Stock Market Analyzer
+
 ### ET AI Hackathon 2026 — Problem Statement 6: AI for the Indian Investor
 
 > Turning live NSE data into actionable, money-making decisions for 14 crore+ Indian retail investors.
-
 ---
+
 
 ## 🚀 Live Demo
 > Run locally using the steps below
