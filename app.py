@@ -109,6 +109,15 @@ STOCKS = {
 
 def get_stock_analysis(symbol, name):
     stock = yf.Ticker(symbol)
+    
+    # ✅ Add headers to avoid rate limit
+    import requests
+    session = requests.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    })
+    stock = yf.Ticker(symbol, session=session)
+    
     data = stock.history(period="1y")
     data['RSI'] = ta.momentum.RSIIndicator(data['Close']).rsi()
     data['DMA_200'] = data['Close'].rolling(window=200).mean()
