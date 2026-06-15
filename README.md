@@ -24,6 +24,7 @@ This app gives every Indian investor **professional-grade AI analysis** — free
 
 ---
 
+
 ## ✨ Features
 | Feature | Description |
 |---|---|
